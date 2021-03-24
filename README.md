@@ -4,6 +4,7 @@
   <a href="https://github.com/crumb1e/tailwind-nord">
     <img src="https://draculatheme.com/static/icons/pack-1/045-dracula.svg" alt="Logo" width="150" />
   </a>
+  <h1 align="center">&nbsp;+&nbsp;</h1>
   <a href="">
     <img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" width="150" />                                                      
   </a>
