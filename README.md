@@ -1,5 +1,5 @@
 ![](https://img.shields.io/npm/v/tailwind-nord?style=flat)
-![](https://img.shields.io/npm/dw/tailwind-nord?style=flat)
+![](https://draculatheme.com/static/icons/pack-1/045-dracula.svg)
 
 <p align="center">
   <a href="https://github.com/crumb1e/tailwind-nord">
