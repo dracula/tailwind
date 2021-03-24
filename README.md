@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/crumb1e/tailwind-nord">
-    <img src="https://draculatheme.com/static/icons/pack-1/045-dracula.svg" alt="Logo">
+    <img src="https://draculatheme.com/static/icons/pack-1/045-dracula.svg" alt="Logo" width="50>
   </a>
 
   <h1 align="center">Tailwind Nord</h1>
