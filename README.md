@@ -32,7 +32,7 @@ You now have access to the Dracula theme anywhere you would use normal tailwind 
 
 ```html
 <div class="bg-buffy">
-    <p class="text-nosferatu ">I want to suck your blood...</p>
+    <p class="text-nosferatu ">I vant to suck your blood...</p>
 </div>
 ```
 
