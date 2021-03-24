@@ -1,6 +1,6 @@
 {
   "name": "tailwind-dracula",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A super tiny tailwind plugin that enables the use of the Dracula colour palette.",
   "main": "index.js",
   "scripts": {
