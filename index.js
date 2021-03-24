@@ -20,7 +20,7 @@ module.exports = plugin(function({ theme }) {
                 'nosferatu': '#282a36',
                 'aro': '#44475a',
                 'cullen': '#f8f8f2',
-                'blue': '#6272a4',
+                'vonCount': '#6272a4',
                 'vanHelsing': '#8be9fd',
                 'blade': '#50fa7b',
                 'morbius': '#ffb86c',
