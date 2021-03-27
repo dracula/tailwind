@@ -72,6 +72,20 @@ Now all colors within dracula will require the dracula prefix
 </div>
 ```
 
+## Changing color names
+You can just pull in some of the colors and add them to tailwind
+```
+const dracula = require('tailwind-dracula/colors')
+theme: {
+    extend: {
+      colors: {
+        ...dracula //adds all the colors
+        pinkish: dracula.buffy //just adds buffy with the name 'pinkish'
+      }
+    }
+  },
+```
+
 ## Color Palette
 
 Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png)
