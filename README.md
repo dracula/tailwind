@@ -28,7 +28,7 @@ In your tailwind.config.js:
   ],
 ```
 
-You now have access to the Dracula theme anywhere you would use normal tailwind colours.
+You now have access to the Dracula theme anywhere you would use normally tailwind colours.
 
 ```html
 <div class="bg-buffy">
@@ -39,6 +39,8 @@ You now have access to the Dracula theme anywhere you would use normal tailwind 
 Color naming has two options (based on Dracula's names with some changes where needed):
 * The color name option. <i>ie. darker, pink, purple</i>
 * The vampire name option. <i>ie. dracula, vonCount, buffy</i>
+
+> :hand: **The default color names for Dracula can override the tailwind default style names. See below on how to prefix your Dracula color names.
 
 ## Color Palette
 
@@ -59,5 +61,3 @@ Yellow/Lincoln       | `#f1fa8c` | `241 250 140` | `65° 92% 76%`   | ![Yellow C
 ## Credits
 [Dracula Theme](https://www.draculatheme.com/)<br />
 [Dracula Theme GitHub](https://github.com/dracula/dracula-theme/blob/master/README.md)
-
-
