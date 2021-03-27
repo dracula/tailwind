@@ -24,7 +24,7 @@ In your tailwind.config.js:
 
 ```js
   plugins: [
-    require('tailwind-dracula'),
+    require('tailwind-dracula')(),
   ],
 ```
 
@@ -40,7 +40,37 @@ Color naming has two options (based on Dracula's names with some changes where n
 * The color name option. <i>ie. darker, pink, purple</i>
 * The vampire name option. <i>ie. dracula, vonCount, buffy</i>
 
-> :hand: **The default color names for Dracula can override the tailwind default style names. See below on how to prefix your Dracula color names.
+> :hand: The default color names for Dracula can override the tailwind default style names.
+
+## Prefixing color names
+By default the plugin accepts a prefix that can be used for the color name options (to avoid clashes with tailwind defaults).
+```js
+  plugins: [
+    require('tailwind-dracula')('dracula'),
+  ],
+```
+Then use the color name option with the dracula prefix, but use the vampire name options without the prefix
+```html
+<div class="bg-dracula-pink">
+    <p class="text-nosferatu ">I vant to suck your blood...</p>
+    <p class="text-pink-500 ">Tailwind is cool...</p> //still works!
+</div>
+```
+
+You can also add the prefix for <b><i>ALL</i></b> names by passing `true` into the second parameter.
+```js
+  plugins: [
+    require('tailwind-dracula')('dracula', true),
+  ],
+```
+Now all colors within dracula will require the dracula prefix
+```html
+<div class="bg-dracula-pink"> //works!
+    <p class="text-nosferatu ">I vant to suck your blood...</p> //doesn't work!
+    <p class="text-dracula-buffy ">Flesh of my flesh...</p> //works!
+    <p class="text-pink-500 ">Tailwind is cool...</p> //still works!
+</div>
+```
 
 ## Color Palette
 
