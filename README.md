@@ -15,7 +15,7 @@ Hopefully this will give you some great dark colors in your next project, and sa
 
 ## Installation
 
-`npm i tailwind-dracula`
+`npm i tailwind-dracula --save-dev`
 
 ## Usage
 

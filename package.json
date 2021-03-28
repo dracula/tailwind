@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/nickgraffis/tailwind-dracula/issues"
   },
+  "peerDependencies": {
+    "tailwindcss": "2.x"
+  },
   "homepage": "https://github.com/nickgraffis/tailwind-dracula#readme"
 }
