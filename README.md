@@ -6,7 +6,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/tailwind](https://draculatheme.com/tailwind).
+All instructions can be found at [draculatheme.com/tailwind-dracula](https://draculatheme.com/tailwind-dracula).
 
 ## Team
 
