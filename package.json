@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickgraffis/tailwind-dracula.git"
+    "url": "git+https://github.com/dracula/tailwind.git"
   },
   "keywords": [
     "package",
@@ -19,12 +19,12 @@
     "theme"
   ],
   "author": "Nick Graffis",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nickgraffis/tailwind-dracula/issues"
+    "url": "https://github.com/dracula/tailwind/issues"
   },
   "peerDependencies": {
     "tailwindcss": "2.x"
   },
-  "homepage": "https://github.com/nickgraffis/tailwind-dracula#readme"
+  "homepage": "https://draculatheme.com/tailwind"
 }
