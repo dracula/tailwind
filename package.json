@@ -24,7 +24,7 @@
     "url": "https://github.com/dracula/tailwind/issues"
   },
   "peerDependencies": {
-    "tailwindcss": "2.x"
+    "tailwindcss": "2.x || 3.x"
   },
   "homepage": "https://draculatheme.com/tailwind"
 }
