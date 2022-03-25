@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/dracula/tailwind">
-    <img src="https://draculatheme.com/static/icons/pack-1/045-dracula.svg" alt="Logo" width="150" />
+    <img src="https://draculatheme.com/static/icons/used/pack-1/045-dracula.svg" alt="Logo" width="150" />
   </a>
   <a href="">
     <img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" width="150" />                                                      
