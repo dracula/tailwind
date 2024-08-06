@@ -83,3 +83,5 @@ theme: {
 #### Full Color Palette
 
 You can also access a full range of color options (50 - 900) outside of the default colors: [All Colors](https://github.com/dracula/tailwind/blob/readme-update/colors.js).
+
+![Full Colors](https://github.com/dracula/tailwind/blob/readme-update/colors.png?raw=true)
