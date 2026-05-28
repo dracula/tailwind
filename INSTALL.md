@@ -1,87 +1,100 @@
 ### [Tailwind](https://tailwindcss.com)
 
-A super tiny tailwind plugin that enables the use of the Dracula colour palette.
+A tiny Tailwind plugin that brings the Dracula color palette into your project.
 
-Hopefully this will give you some great dark colors in your next project, and save you 5 min of setting up custom colors.
+#### Install using npm
 
-#### Installation
+Install the package as a development dependency:
 
+```bash
+npm install tailwind-dracula --save-dev
 ```
-npm i tailwind-dracula --save-dev
+
+#### Install manually
+
+If you prefer, you can also clone this repository and copy what you need:
+
+```bash
+git clone https://github.com/dracula/tailwind.git
 ```
 
-#### Usage
+#### Activating theme
 
-In your tailwind.config.js:
+1. Add the plugin to your `tailwind.config.js`:
 
 ```js
-  plugins: [
-    require('tailwind-dracula')(),
-  ],
+plugins: [require("tailwind-dracula")()],
 ```
 
-You now have access to the Dracula theme anywhere you would use normally tailwind colours.
+2. Use Dracula colors in your classes:
 
 ```html
 <div class="bg-buffy">
-    <p class="text-nosferatu ">I vant to suck your blood...</p>
+  <p class="text-nosferatu">I vant to suck your blood...</p>
 </div>
 ```
 
-Color naming has two options (based on Dracula's names with some changes where needed):
-* The color name option. <i>ie. darker, pink, purple</i>
-* The vampire name option. <i>ie. dracula, vonCount, buffy</i>
+3. Done - the Dracula palette is now available anywhere you use Tailwind colors.
 
-> The default color names for Dracula can override the tailwind default style names.
+Color naming has two options:
+
+- Color names, such as `darker`, `pink`, and `purple`
+- Vampire names, such as `dracula`, `vonCount`, and `buffy`
+
+> Default Dracula color names can overlap with Tailwind default color names.
 
 #### Prefixing color names
-By default the plugin accepts a prefix that can be used for the color name options (to avoid clashes with tailwind defaults).
+
+To avoid naming collisions, pass a prefix for color-name aliases:
+
 ```js
-  plugins: [
-    require('tailwind-dracula')('dracula'),
-  ],
+plugins: [require("tailwind-dracula")("dracula")],
 ```
-Then use the color name option with the dracula prefix, but use the vampire name options without the prefix
+
+Then use prefixed color-name aliases and unprefixed vampire aliases:
+
 ```html
 <div class="bg-dracula-pink">
-    <p class="text-nosferatu">I vant to suck your blood...</p>
-    <p class="text-pink-500">Tailwind is cool...</p> //still works!
+  <p class="text-nosferatu">I vant to suck your blood...</p>
+  <p class="text-pink-500">Tailwind is cool...</p>
 </div>
 ```
 
-You can also add the prefix for <b><i>ALL</i></b> names by passing `true` into the second parameter.
+To require the prefix for all Dracula color names, pass `true` as the second argument:
+
 ```js
-plugins: [
-  require('tailwind-dracula')('dracula', true),
-],
+plugins: [require("tailwind-dracula")("dracula", true)],
 ```
-Now all colors within dracula will require the dracula prefix
+
+Example:
+
 ```html
-<div class="bg-dracula-pink"> //works!
-    <p class="text-nosferatu ">I vant to suck your blood...</p> //doesn't work!
-    <p class="text-dracula-buffy ">Flesh of my flesh...</p> //works!
-    <p class="text-pink-500 ">Tailwind is cool...</p> //still works!
+<div class="bg-dracula-pink">
+  <p class="text-nosferatu">This no longer works.</p>
+  <p class="text-dracula-buffy">This works.</p>
+  <p class="text-pink-500">Tailwind colors still work.</p>
 </div>
 ```
 
 #### Changing color names
 
-You can just pull in some of the colors and add them to tailwind
-```
-const dracula = require('tailwind-dracula/colors')
+Import the color map and extend Tailwind with your own aliases:
+
+```js
+const dracula = require("tailwind-dracula/colors");
 
 theme: {
-    extend: {
-      colors: {
-        ...dracula //adds all the colors
-        pinkish: dracula.buffy //just adds buffy with the name 'pinkish'
-      }
-    }
+  extend: {
+    colors: {
+      ...dracula, // add all Dracula colors
+      pinkish: dracula.buffy, // rename buffy
+    },
   },
+},
 ```
 
-#### Full Color Palette
+#### Full color palette
 
-You can also access a full range of color options (50 - 900) outside of the default colors: [All Colors](https://github.com/dracula/tailwind/blob/readme-update/colors.js).
+For the full 50-900 scale, see [All colors](https://github.com/dracula/tailwind/blob/master/colors.js).
 
-![Full Colors](https://github.com/dracula/tailwind/blob/readme-update/colors.png?raw=true)
+![Full colors](https://github.com/dracula/tailwind/blob/master/colors.png)
